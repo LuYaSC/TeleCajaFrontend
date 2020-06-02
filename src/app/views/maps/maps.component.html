@@ -1,0 +1,148 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card card-plain">
+            <div class="card-header card-header-success">
+                <h4 class="card-title">Mapa en vivo</h4>
+                <!--ul>
+                    <li>{{options.zoom}}</li>
+                    <li>{{timestamp}}</li>
+                </ul-->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body">
+
+                        <!--div class="map" leaflet [leafletOptions]="options">
+                        </div-->
+                        <div class="map" #mapElement></div>
+                        <!--<iframe class="map" src="/assets/MapaVivo/CovidMapa.html" frameborder="0"></iframe>-->
+                        <!--form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Cedula de Identidad">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <button mat-raised-button type="submit" class="btn btn-danger pull-left">Buscar</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form-->
+                    </div>
+                </div>
+                <!--div class="col-md-3">
+                    <h4 class="card-title">Notificaciones</h4>
+                    <div style="width: 250px; height: 580px; overflow-y: scroll;">
+                        <div class="alert alert-info">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 1</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+
+                        </div>
+                        <div class="alert alert-primary">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 1</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+                        </div>
+                        <div class="alert alert-danger">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 1</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+                        </div>
+                        <div class="alert alert-info">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 3</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+                        </div>
+                        <div class="alert alert-primary">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 4</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+                        </div>
+                        <div class="alert alert-warning">
+                            <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                            <span><b> Nivel: 5</b></span>
+                            <span><b> Número Contacto: Registro Reservado</b></span>
+                            <span><b> CI.: Reservado</b></span>
+                            <span><b> Fecha Registro: Fecha: 2020-04-10 00:00:00</b></span>
+                            <button mat-raised-button color="purple">Ficha Técnica</button>
+                        </div>
+                    </div>
+                </div-->
+
+                <!--div class="col-md-3" *ngIf="totalLocations>0">
+                        <div style="width: 800px; height: 600px; overflow-y: scroll;">
+                            <h4 class="card-title">Notificaciones</h4>{{getDataAlerts.length}}
+                            <div *ngFor="let item of getDataAlerts">
+                                <div class="alert alert-info">
+                                    <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i class="material-icons">close</i>
+                            </button>
+                                    <span><b> Nivel: </b>{{item.nivel}}</span>
+                                    <span><b> Número Contacto: </b>{{item.numeroContacto}}</span>
+                                    <span><b> CI.: </b> {{item.ci}}</span>
+                                    <span><b> Fecha Registro: </b> {{item.fechaHoraRegistro | date:'dd-MM-yyyy h:mm:ss a' }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="alert alert-success">
+                        <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                            <b> Info - </b> Notificacion...</span>
+                    </div>
+                    <div class="alert alert-warning">
+                        <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                            <b> Info - </b> Notificacion...</span>
+                    </div>
+                    <div class="alert alert-danger">
+                        <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                            <b> Info - </b> Notificacion...</span>
+                    </div>
+                    <div class="alert alert-primary">
+                        <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                            <b> Info - </b> Notificacion...</span>
+                    </div-->
+            </div>
+        </div>
+    </div>
+</div>
